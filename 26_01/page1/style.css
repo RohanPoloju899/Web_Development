@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+    font-size: 25px;
+    font-style:italic;
+    line-height: 1.0;
+}
+input{
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 18px;
+    border:1px solid #ccc;
+    outline:none;
+    margin-bottom: 20px;
+}
+
+        
