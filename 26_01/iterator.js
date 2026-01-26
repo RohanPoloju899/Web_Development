@@ -21,3 +21,16 @@ let variable2={
 for(let variable of variable2){
     process.stdout.write(variable + " ");
 }
+
+function* f(v){
+    while(true){
+        yield v++;
+    }
+}
+
+const f1=f(5);
+console.log(f1.next().value);
+console.log(f1.next().value);
+console.log(f1.next().value);
+
+
