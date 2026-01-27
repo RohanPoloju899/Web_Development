@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <ul id="u0">
+            <li>Object0</li>
+            <li>Object1</li>
+            <li>Object2</li>
+        </ul>
+    </body>
+    
+    <script>
+        let u1=document.querySelector("#u0");
+        u1.addEventListener("mouseover",(e)=>{
+            if(e.target.tagName==="LI"){
+                e.target.style.backgroundColor="yellow";
+            }
+        });
+        u1.addEventListener("mouseout",(e)=>{
+            if(e.target.tagName==="LI"){
+                e.target.style.backgroundColor="";
+            }
+        });
+    </script>
+</html>
