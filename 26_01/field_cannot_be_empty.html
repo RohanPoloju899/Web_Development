@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <form id="f">
+            <input type="t" placeholder="Enter anything" id="i"/>
+            <button type="b">Submit</button>
+        </form>
+    </body>
+    
+    <script>
+        document.querySelector("#f").addEventListener("submit",(e)=>{
+            let v=document.querySelector("#i");
+            if(!v.value){
+                e.preventDefault();
+                alert("input cannot be empty");
+            }
+        });
+    </script>
+</html>
