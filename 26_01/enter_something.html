@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <button id="b">Add Something</button>
+    </body>
+    
+    <script>
+        document.querySelector("#b").addEventListener("click",()=>{
+            let v=document.createElement("div");
+            v.textContent="New Element(div) is created";
+            document.body.appendChild(v);
+        });
+    </script>
+</html>
