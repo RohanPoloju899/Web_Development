@@ -1,6 +1,6 @@
 <html>
     <body>
-        <h1 id="example">This is some text</h1>
+        <h1 class="example">This is some text</h1>
         <button onclick="changeText()">Submit</button>
         <ul class="myList">
             <li>First Item</li>
@@ -8,14 +8,16 @@
             <li>Third Item</li>
         </ul>
         <p>This is a paragraph</p>
+        <p>This is another paragraph</p>
         <script>
             function changeText(){
-                let element=document.getElementById("example");
+                const element=document.getElementsByClassName("example")[0];
                 element.textContent="Text changes by JS";
             }
-            console.log(document.getElementById("example").textContent);
-            console.log(document.getElementsByTagName("p").length);
-            let listItems=document.getElementsByClassName("myList")[0].children[0];
+            console.log(document.getElementsByClassName("example")[0].textContent);
+            const paragraphs=document.querySelectorAll("p");
+            paragraphs.forEach(p=>console.log(p.textContent));
+            const listItems=document.getElementsByClassName("myList")[0].children;
             for(let i=0;i<listItems.length;i++){
                 listItems[i].addEventListener("click",function(){
                     console.log("you clicked: ",this.textContent);
